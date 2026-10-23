@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: payments-network
+  description: Infrastructure for a new platform service
+  annotations:
+    github.com/project-slug: jk-platform-lab/payments-network
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - terraform
+    - dev
+spec:
+  type: service
+  lifecycle: experimental
+  owner: user:default/jaykearney
+  dependsOn:
+    - component:infradoctor
